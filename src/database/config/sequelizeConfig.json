@@ -7,8 +7,14 @@
     "dialect": "postgres"
   },
   "production": {
-   "use_env_variable": "DATABASE_URL",
-   "dialect": "postgres",
-   "operatorAliases": false
+    "use_env_variable": "DATABASE_URL",
+    "dialect": "postgres",
+    "operatorAliases": false,
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized":false
+      }
+    }
   }
 }
