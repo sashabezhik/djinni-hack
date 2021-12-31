@@ -31,7 +31,7 @@ class Server {
     initMiddlwares() {
         this.app.use(cors())
         this.app.use(express.json({ extended: true }))
-        this.app.use(express.static(path.join(__dirname, '../client/build')))
+        this.app.use('/', express.static(path.join(__dirname, '../client/build')))
     }
 
     initControllers() {
@@ -86,7 +86,7 @@ class Server {
         )
 
         this.app.get('*', (req, res) => {
-            res.sendFile(path.join(__dirname, '/client/build', 'index.html'))
+            res.sendFile(path.join(__dirname, '../client/build', 'index.html'))
         })
     }
 

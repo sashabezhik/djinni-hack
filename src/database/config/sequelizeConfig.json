@@ -7,13 +7,11 @@
     "dialect": "postgres"
   },
   "production": {
-    "username": "ovwyceowayfliw",
-    "password": "c7eaf8b8fa447ee402d74ca0db439f99f679beef60333e2d49fda0e6c837f40b",
-    "database": "ddrp8ltak548i4",
-    "host": "ec2-54-229-47-120.eu-west-1.compute.amazonaws.com",
-    "port": 532,
+    "username": "postgres",
+    "password": "password",
+    "database": "djinni_hack_production",
+    "host": "localhost",
     "dialect": "postgres",
-    "operatorsAliases": false,
     "use_env_variable": "DATABASE_URL"
   }
 }
