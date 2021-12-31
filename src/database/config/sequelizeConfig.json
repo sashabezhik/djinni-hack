@@ -7,16 +7,8 @@
     "dialect": "postgres"
   },
   "production": {
-    "username": "postgres",
-    "password": "password",
-    "database": "djinni-prod",
-    "host": "localhost",
-    "dialect": "postgres",
-    "dialectOptions": {
-      "ssl": {
-        "require": true,
-        "rejectUnauthorized": false
-      }
-    }
+   "use_env_variable": "DATABASE_URL",
+   "dialect": "postgres",
+   "operatorAliases": false
   }
 }
