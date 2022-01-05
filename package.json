@@ -5,6 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/index.js",
+    "db:create": "sequelize-cli db:create",
+    "db:migrate": "sequelize-cli db:migrate",
+    "db:seed": "sequelize-cli db:seed:all",
     "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "author": "",

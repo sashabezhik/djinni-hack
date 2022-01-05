@@ -1,8 +1,8 @@
 {
   "development": {
     "username": "postgres",
-    "password": "16052000",
-    "database": "djinni_db_development",
+    "password": "postgres",
+    "database": "djinni_db",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
